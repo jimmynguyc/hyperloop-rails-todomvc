@@ -8,6 +8,7 @@ class ListItem < Hyperloop::Component
           .on(:click) { params.item.update(completed: !params.item.completed) }
         LABEL { params.item.title }
         BUTTON(class: 'destroy')
+          .on(:click) { params.item.destroy }
       end
       INPUT(class: 'edit', defaultValue: params.item.title)
     end
