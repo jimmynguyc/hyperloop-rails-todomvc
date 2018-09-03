@@ -1,8 +1,10 @@
-  class Todolist < Hyperloop::Component
-    render do
+  class Todolist < Hyperloop::Router
+
+    history :browser
+    route do
       SECTION(class: 'todoapp') do
         Header()
-        List()
+        Route('/:scope', exact: true, mounts: List)
         Footer()
       end
     end
