@@ -1,9 +1,9 @@
-
   class Todolist < Hyperloop::Component
-
-    def render
-      DIV do
-        "Todolist"
+    render do
+      SECTION(class: 'todoapp') do
+        Header()
+        List()
+        Footer()
       end
     end
   end
