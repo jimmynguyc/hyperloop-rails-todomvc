@@ -1,7 +1,9 @@
 class Footer < Hyperloop::Component
   render do
     FOOTER(class: 'footer') do
-      SPAN(class: 'todo-count', dangerously_set_inner_HTML: { __html: "<strong>0</strong> item left" } )
+      SPAN(class: 'todo-count') do
+        "#{Todo.count} item#{'s' if Todo.count != 1} left"
+      end
       UL(class: 'filters') do
         LI { A(class: 'selected', href: '#/') { 'All' } }
         LI { A(href: '#/active') { 'Active' } }
