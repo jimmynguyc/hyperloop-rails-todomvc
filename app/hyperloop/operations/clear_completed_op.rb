@@ -1,4 +1,5 @@
 class ClearCompletedOp < Hyperloop::Operation
   step { HTTP.post('/clear_completed') }
-  failed { alert("Failed") }
+  step { alert("Cleared") }
+  failed { alert("Failed to clear completed.") }
 end
