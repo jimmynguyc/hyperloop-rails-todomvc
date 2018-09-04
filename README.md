@@ -1,24 +1,14 @@
-# README
+Implementation of [TodoMVC](http://todomvc.com/) using [Ruby Hyperloop](http://ruby-hyperloop.org/) a.k.a [Hyperstack](https://hyperstack.org/) with Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Referencing heavily on this [tutorial](https://github.com/ruby-hyperloop/todo-tutorial)
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+1. `bundle install`
+2. `yarn install`
+3. `rake db:migrate`
 
-* System dependencies
+## Running
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. `bundle exec foreman start`
+2. Visit http://localhost:3000
