@@ -4,6 +4,7 @@
     route do
       SECTION(class: 'todoapp') do
         Header()
+        Route('/', exact: true, mounts: List)
         Route('/:scope', exact: true, mounts: List)
         Footer()
       end
