@@ -1,6 +1,6 @@
 Implementation of [TodoMVC](http://todomvc.com/) using [Ruby Hyperloop](http://ruby-hyperloop.org/) a.k.a [Hyperstack](https://hyperstack.org/) with Rails.
 
-Referencing heavily on this [tutorial](https://github.com/ruby-hyperloop/todo-tutorial)
+Referencing heavily on this [tutorial](https://github.com/ruby-hyperloop/todo-tutorial).
 
 ## Installation
 
