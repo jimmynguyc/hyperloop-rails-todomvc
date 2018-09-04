@@ -12,7 +12,7 @@ class Footer < Hyperloop::Component
         LI { NavLink('/completed', active_class: 'selected') { 'Completed' } }
       end
       BUTTON(class: 'clear-completed') { 'Clear completed' }
-        .on(:click) { Todo.clear_completed }
+        .on(:click) { ClearCompletedOp.run }
     end
   end
 end
